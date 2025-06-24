@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/images/bg-bottom.svg), url(/images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left, top right;
+    background-color: hsl(240, 78%, 98%);
+    font-family: "Montserrat";
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    color: hsla(232, 13%, 33%, 0.75);
+}
+
+.sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 100px 0;
+}
+
+.sub h2{
+    color: hsl(234, 14%, 74%);
+    font-size: 15px;
+}
+
+.slider{
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    width: 55px;
+    height: 32px;
+    border-radius: 50px;
+    padding: 4px;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.circle{
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    float: right;
+}
+
+.bloc{
+    display: flex;
+}
+
+.professional{
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(0.45turn, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    border-radius: 10px;
+    padding: 63px 30px 50px 30px;
+    transform: translateY(-23px);
+}
+
+.professional h2{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.professional h3{
+    font-size: 70px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.professional h3 span{
+    font-size: 40px;
+    margin-right: 8px;
+}
+
+.professional h4{
+    font-size: 15px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.professional button{
+    background-color: white;
+    color: hsl(237, 63%, 64%);
+    margin-top: 37px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.professional button:hover{
+    background: linear-gradient(0.45turn, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    border: 1px solid white;
+}
+
+.basic, .master{
+    background-color: white;
+    color: hsl(232, 13%, 33%);
+    width: 350px;
+    height: 450px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10);
+}
+
+.basic h2, .master h2{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.basic h3, .master h3{
+    font-size: 70px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.basic h3 span, .master h3 span{
+    font-size: 40px;
+    margin-right: 8px;
+}
+
+.basic h4, .master h4{
+    font-size: 15px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.basic h2, .master h2{
+    font-size: 18px;
+}
+
+.basic button, .master button{
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    margin-top: 35px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.basic button:hover{
+    border: 1px solid hsla(237, 63%, 64%, 0.75);
+    background: white;
+    color: hsla(237, 63%, 64%, 0.90);
+}
+
+.master button:hover{
+    border: 1px solid hsla(237, 63%, 64%, 0.75);
+    background: white;
+    color: hsla(237, 63%, 64%, 0.90);
+}
+
+.basic{
+    border-radius: 10px 0 0 10px;
+}
+
+.master{
+    border-radius: 0 10px 10px 0;
+}
+
+button{
+    border: none;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.h3_2{
+    display: none;
+}
