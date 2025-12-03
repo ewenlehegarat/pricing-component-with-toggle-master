@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(/images/bg-bottom.svg), url(/images/bg-top.svg);
+    background-image: url(images/bg-bottom.svg), url(images/bg-top.svg);
     background-repeat: no-repeat;
     background-position: bottom left, top right;
     background-color: hsl(240, 78%, 98%);
@@ -17,6 +17,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 50px 0;
 }
 
 h1{
@@ -55,16 +56,19 @@ h1{
 
 .bloc{
     display: flex;
+    justify-content: center;
+}
+
+.border{
+    padding: 25px 0;
 }
 
 .professional{
     width: 350px;
-    height: 500px;
     background: linear-gradient(0.45turn, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: white;
     border-radius: 10px;
     padding: 63px 30px 50px 30px;
-    transform: translateY(-23px);
 }
 
 .professional h2{
@@ -108,7 +112,6 @@ h1{
     background-color: white;
     color: hsl(232, 13%, 33%);
     width: 350px;
-    height: 450px;
     padding: 40px 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10);
 }
@@ -179,4 +182,22 @@ button{
 
 .h3_2{
     display: none;
+}
+
+@media screen and (max-width: 1100px){
+    .bloc{
+        flex-direction: column;
+    }
+    .basic{
+        border-radius: 10px 10px 0 0;
+    }
+    .professional{
+        border-radius: 0;
+    }
+    .border{
+        padding: 0;
+    }
+    .master{
+        border-radius: 0 0 10px 10px;
+    }
 }
